@@ -1,0 +1,77 @@
+
+<mat-card>
+    <h1>Add New Quiz</h1>
+    <div class="container">
+    <div class="row">
+         <div class="col-md-8 offset-md-2">
+<form *ngIf="quiz" (ngSubmit)="updateData()">
+    <mat-form-field class="w100" appearance="fill">
+        <mat-label>Enter Title</mat-label>
+        <input autofocus type="text" name="title" [(ngModel)]="quiz.title" required matInput placeholder="Enter here"
+          />
+    </mat-form-field>
+
+    <mat-form-field class="w100" appearance="fill">
+        <mat-label>Description</mat-label>
+        <textarea  name="description " [(ngModel)]="quiz.description"  rows="5" required matInput
+            placeholder="Enter category description" ></textarea>
+    </mat-form-field>
+
+<div class="row">
+    <div class="col-md-6">
+<!-- //max marks  -->
+<mat-form-field class="w100" appearance="fill">
+    <mat-label>Maximum marks</mat-label>
+    <input  type="text" name="maxMarks"  [(ngModel)]="quiz.maxMarks" required matInput placeholder="Enter here"
+      />
+</mat-form-field> 
+
+    </div>
+
+
+
+
+    <div class="col-md-6">
+        <!-- //number of question to be shown -->
+        <mat-form-field class="w100" appearance="fill">
+            <mat-label>Number 
+                Of Questions
+            </mat-label>
+            <input  type="text" name="numberOfQuestions" [(ngModel)]="quiz.numberOfQuestions" required matInput placeholder="Enter here"
+              />
+        </mat-form-field> 
+    </div>
+
+</div>
+
+<mat-slide-toggle
+class="mt20"
+name="active"
+[(ngModel)]="quiz.active"
+>
+Publish Status
+</mat-slide-toggle>
+<br/>
+
+<!-- category select -->
+<mat-form-field  class="w100 mt20" appearance="fill" >
+    <mat-label>Categories</mat-label>
+    <mat-select name="category" [(ngModel)]="quiz.category.cid">
+        <mat-option *ngFor="let c of categories" [value]="c.cid">
+{{c.title}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<div class="container text-center mt20">
+    <button mat-raised-button color="accent" type="submit">Update</button>
+
+</div>
+
+
+</form>
+ </div>
+ </div>
+ </div>
+</mat-card>
+{{quiz | json}}

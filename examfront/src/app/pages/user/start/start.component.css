@@ -1,0 +1,8 @@
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+  .word{
+    word-break: break-word;
+    height: 200px;
+    width: 200px;
+  }

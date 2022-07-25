@@ -1,0 +1,175 @@
+/* .home img
+{
+    width:100%;
+    height: 90vh;
+    object-position: center;
+    object-fit: cover;
+    background: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,0.5)),
+} */
+
+
+
+.home
+{
+    width:100%;
+    height: 90vh;
+    object-position: center;
+    object-fit: cover;
+    background: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,0.5)),
+   /* url(https://thumbs.dreamstime.com/b/background-study-stack-books-time-glass-multicolored-pencils-127589182.jpg); */
+ url(../../../assets/home3.jpg);
+   background-size:cover;
+}
+
+
+.homecontent
+{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+}
+.homecontent h1
+{
+    color: #ffffff;
+    font-size: 50px;
+}
+.homecontent h2
+{
+    color: #ffffff;
+    font-size: 20px;
+}
+.homecontent a
+{
+    margin-top: 10px;
+}
+
+
+
+
+
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image{
+    background-image:url("../../../assets/sbi.png");
+    background-size: cover;
+}
+
+footer{
+   position: relative;
+   width: 100%;
+   height: 60px;
+   background: black;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   
+}
+
+
+
+
+
+ .block-heading{
+   padding-top: 30px;
+   padding-bottom: 30px;
+}  
+
+
+
+
+
+
+
+#testimonial_area {
+	padding: 10% 0;
+}
+.box-area {
+	padding: 30px;
+	position: relative;
+	display: block;
+	background: #fff;
+	color: #000;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin: 40px 0;
+}
+.box-area h5 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #0a69ed;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.box-area .content {
+	color: #262626;
+}
+.box-area .img-area {
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top: -40px;
+	left: 0;
+	bottom: 0;
+	margin: 0 auto;
+	right: 0;
+	z-index: 1;
+	border: 5px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+.box-area .img-area img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+.socials {
+	margin-top: 30px;
+}
+.socials i {
+	margin: 0 10px;
+	color: #0a69ed;
+	font-size: 18px;
+}
+#testimonial_area .owl-nav {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+#testimonial_area .owl-prev, #testimonial_area .owl-next {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	color: #0a69ed;
+	border-radius: 50%;
+	text-align: center;
+	background: #fff;
+	position: absolute;
+}
+#testimonial_area .owl-prev {
+	left: -60px;
+	top: -30px;
+}
+#testimonial_area .owl-next {
+	right: -60px;
+	top: -30px;
+}
+@media only screen and (max-width: 991px) {
+	.owl-nav {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.box-area {
+		text-align: center;
+	}
+	.owl-nav {
+		display: none;
+	}
+}
